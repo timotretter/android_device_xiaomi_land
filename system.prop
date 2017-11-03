@@ -52,16 +52,16 @@ persist.service.btui.use_aptx=1
 persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
 
 #Bluetooth
-ro.bluetooth.dun=true 
-ro.bluetooth.hfp.ver=1.7 
-ro.bluetooth.sap=true 
-ro.qualcomm.bluetooth.ftp=true 
-ro.qualcomm.bluetooth.hfp=true 
-ro.qualcomm.bluetooth.hsp=true 
-ro.qualcomm.bluetooth.map=true 
-ro.qualcomm.bluetooth.nap=true 
-ro.qualcomm.bluetooth.opp=true 
-ro.qualcomm.bluetooth.pbap=true 
+ro.bluetooth.dun=true
+ro.bluetooth.hfp.ver=1.7
+ro.bluetooth.sap=true
+ro.qualcomm.bluetooth.ftp=true
+ro.qualcomm.bluetooth.hfp=true
+ro.qualcomm.bluetooth.hsp=true
+ro.qualcomm.bluetooth.map=true
+ro.qualcomm.bluetooth.nap=true
+ro.qualcomm.bluetooth.opp=true
+ro.qualcomm.bluetooth.pbap=true
 ro.qualcomm.bt.hci_transport=smd
 qcom.bluetooth.soc=smd
 
@@ -71,8 +71,6 @@ persist.camera.time.monotonic=1
 media.camera.ts.monotonic=0
 camera.display.umax=1920x1080
 camera.display.lmax=1280x720
-persist.ts.postmakeup=true
-persist.ts.rtmakeup=true
 persist.camera.HAL3.enabled=1
 
 #CNE
@@ -82,12 +80,12 @@ persist.dpm.feature=1
 #Display
 ro.opengles.version=196610
 ro.sf.lcd_density=320
-debug.gralloc.enable_fb_ubwc=1 
-debug.enable.sglscale=1 
-debug.mdpcomp.logs=0 
-dev.pm.dyn_samplingrate=1 
-persist.demo.hdmirotationlock=false 
-persist.hwc.enable_vds=1 
+debug.gralloc.enable_fb_ubwc=1
+debug.enable.sglscale=1
+debug.mdpcomp.logs=0
+dev.pm.dyn_samplingrate=1
+persist.demo.hdmirotationlock=false
+persist.hwc.enable_vds=1
 persist.hwc.mdpcomp.enable=true
 
 # DRM
@@ -103,8 +101,8 @@ ro.fm.transmitter=false
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 #GPS
-persist.gps.qc_nlp_in_use=1 
-persist.loc.nlp_name=com.qualcomm.location 
+persist.gps.qc_nlp_in_use=1
+persist.loc.nlp_name=com.qualcomm.location
 ro.gps.agps_provider=1
 
 # SdcardFs
@@ -117,6 +115,8 @@ persist.media.treble_omx=false
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
 vidc.enc.narrow.searchrange=1
 drm.service.enabled=true
 vidc.disable.split.mode=1
@@ -127,13 +127,13 @@ ro.use_data_netmgrd=true
 persist.data.mode=concurrent
 
 #Perf
-ro.sys.fw.dex2oat_thread_count=4 
+ro.sys.fw.dex2oat_thread_count=4
 ro.sys.fw.use_trim_settings=true
-ro.am.reschedule_service=true 
-ro.core_ctl_min_cpu=2 
-ro.core_ctl_max_cpu=4 
-ro.vendor.at_library=libqti-at.so 
-ro.vendor.extension_library=libqti-perfd-client.so 
+ro.am.reschedule_service=true
+ro.core_ctl_min_cpu=2
+ro.core_ctl_max_cpu=4
+ro.vendor.at_library=libqti-at.so
+ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.gt_library=libqti-gt.so
 
 #Trim properties
@@ -170,14 +170,13 @@ persist.radio.rat_on=combine
 persist.radio.sib16_support=1
 ril.subscription.types=NV,RUIM
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
-ril.ecclist=000,08,100,101,102,110,112,118,119,120,122,911,999 
-ril.ecclist1=000,08,100,101,102,110,112,118,119,120,122,911,999 
-ro.ril.disable.power.collapse=0 
-ro.ct.device.model=XMP-2016030 
-ro.telephony.call_ring.multiple=false 
-ro.telephony.default_network=20 
-service.qti.ims.enabled=1 
-telephony.lteOnCdmaDevice=1 
-ro.ril.fast.dormancy.rule=0 
+ril.ecclist=000,08,100,101,102,110,112,118,119,120,122,911,999
+ril.ecclist1=000,08,100,101,102,110,112,118,119,120,122,911,999
+ro.ril.disable.power.collapse=0
+ro.ct.device.model=XMP-2016030
+ro.telephony.call_ring.multiple=false
+ro.telephony.default_network=20
+service.qti.ims.enabled=1
+telephony.lteOnCdmaDevice=1
+ro.ril.fast.dormancy.rule=0
 ro.ril.hsxpa=0
-
