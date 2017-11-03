@@ -66,11 +66,13 @@ private:
     int setTorchMode(const char* camera_id, bool on);
 public:
     static struct hw_module_methods_t mModuleMethods;
+    bool can_talk_to_sensormanager();
 
 private:
     int mNumOfCameras;
     hal_desc *mHalDescriptors;
     const camera_module_callbacks_t *mCallbacks;
+    android::Mutex gCameraWrapperLock;
 };
 
 }; /*namespace qcamera*/
