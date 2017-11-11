@@ -116,10 +116,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8937 \
-    libqomx_core \
-    Snap \
-    libxml2
+    Snap
 
 # Camera HIDL HAL
 PRODUCT_PACKAGES += \
