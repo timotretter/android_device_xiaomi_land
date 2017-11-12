@@ -45,11 +45,6 @@
         <transport>hwbinder</transport>
         <version>1.0</version>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.health</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-    </hal>
    <!-- RIL AUDIO HAL -->
    <hal format="hidl">
        <name>vendor.qti.qcril.am</name>
